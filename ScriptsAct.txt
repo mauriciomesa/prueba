@@ -1,0 +1,160 @@
+-----INSERTAR PROGRAMA INGENIERÍA INFORMÁTICA-----
+
+INSERT INTO `programas`(`nombre`,`created_at`,`updated_at`) VALUES ('Ingeniería Informática','2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----CREAR ADMINISTRADOR COMO DOCENTE-----
+
+INSERT INTO `docentes`(`tipo_identificacion`,`numero_identificacion`,`numero_celular`,`codigo_hv`,`usuario_id`,`created_at`,`updated_at`) VALUES ('Cedula de ciudadania',1111111111,'1111111111','HV001',1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----CREACIÓN DE PERMISOS-----
+
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar Area','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Control Global','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Editar Area','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar Cursos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Editar Cursos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Crear Curso','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar Grupos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar Casos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Administrar Docentes','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Crear Cursos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Gestionar Formatos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Gestionar Examenes','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Gestionar Documentos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Ver Cursos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Ver Grupos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Ver Areas','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Ver Casos','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Ver Examenes','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `permissions`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Generar Reportes Privados','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----CREACIÓN DE ROLES-----
+
+INSERT INTO `roles`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Coordinador General','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `roles`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Coordinador','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `roles`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Docente','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `roles`(`name`,`guard_name`,`created_at`,`updated_at`) VALUES ('Estudiante','web','2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----CREACIÓN DE ÁREAS-----
+
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Algoritmos y programación',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Desarrollo de software',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Gestión de proyectos informáticos',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Infraestructura TI',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Profundización',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Ciencias básicas',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Ciencias básicas de ingeniería',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `areas`(`nombre`,`coordinador_id`,`programa_id`,`created_at`,`updated_at`) VALUES ('Formación complementaria',1,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----CREACIÓN DE CURSOS-----
+
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01179','Algoritmos y programación 1',4,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01181','Algoritmos y programación 2',4,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01183','Algoritmos y programación 3',3,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01184','Taller de lenguajes de programación 1',2,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01186','Algoritmos y programación 4',3,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01189','Taller de lenguajes de programación 2',2,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01200','Inteligencia artificial',2,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01206','Programación distribuida y paralela',2,1,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01187','Análisis de software',4,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01188','Bases de datos 1',4,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01190','Diseño de software',4,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01195','Bases de datos 2',3,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01194','Proyecto de construcción de SW',2,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01201','Pruebas y gestión de la configuración',2,2,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01205','Sistemas y organizaciones',2,3,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01207','Proyecto integrador',2,3,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01208','Formulación y evaluación de proyectos de TI',3,3,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01211','Gestión de proyectos de TI',3,3,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01221','Trabajo de grado',7,3,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01191','Arquitectura de hardware',4,4,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01196','Sistemas operativos',4,4,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01202','Redes de comunicación',4,4,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01209','Gestión de redes y servicios',3,4,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01225','Profundización 1',3,5,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01226','Profundización 2',3,5,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01227','Profundización 3',2,5,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00379','Cálculo diferencial',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00382','Cálculo integral',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00414','Geometría vectorial',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00079','Física del movimiento',4,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00415','Cálculo de varias variables',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00408','Algebra lineal',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00014','Electricidad y magnetismo',4,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00412','Ecuaciones diferenciales',3,6,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01180','Matemáticas discretas 1',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01178','Introducción al área profesional',3,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01182','Matemáticas discretas 2',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01185','Semiótica informática',2,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING00078','Electrónica digital',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01192','Teoría de lenguajes y compiladores',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01193','Estadística aplicada',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01198','Teoría de la información',3,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01199','Análisis numérico',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01203','Investigación de operaciones',4,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01204','Metodología de la investigación',2,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01210','Modelos y simulación',3,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00102','Ética',1,7,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00030','Lengua materna',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00031','Humanidades 1',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('EFD00533','Deporte arte y recreación',1,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00097','Pedagogía constitucional',1,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01197','Emprendimiento empresarial TI',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CAG00701','Ecología',1,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('CBS00032','Humanidades 2',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01228','Electiva 1',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01229','Electiva 2',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+INSERT INTO `cursos`(`codigo`,`nombre`,`creditos`,`area_id`,`created_at`,`updated_at`) VALUES ('ING01230','Electiva 3',2,8,'2018-01-24 14:15:00','2018-01-24 14:15:00');
+
+-----INSERTAR PRERREQUISITOS-----
+
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (1,2,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (2,3,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (2,4,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (3,5,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (5,6,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (43,7,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (5,7,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (22,8,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (6,8,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (38,9,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (4,9,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (37,10,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (10,11,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (9,11,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (10,12,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (11,13,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (13,14,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (13,16,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (15,17,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (13,17,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (17,18,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (18,19,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (45,19,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (39,20,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (20,21,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (42,22,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (22,23,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (27,28,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (28,31,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (29,32,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (30,33,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (31,34,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (35,37,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (36,38,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (30,39,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (37,40,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (28,41,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (41,42,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (34,43,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (32,43,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (41,44,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (32,44,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (41,45,'prerrequisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (44,46,'prerrequisito');
+
+-----INSERTAR CORREQUISITOS-----
+
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (28,30,'correquisito');
+INSERT INTO `curso_requisito`(`curso_id`,`requisito_id`,`tipo`) VALUES (32,38,'correquisito');
